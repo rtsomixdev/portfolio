@@ -10,24 +10,24 @@ function RepositoryPage() {
   const menucalurl = "https://drive.google.com/drive/folders/14dIVUyU3QUb1IXT2j2fluRZmG8dtZzxS?usp=sharing";
   return (
     <div className="flex flex-col justify-center items-center pb-20">
-      <h1 className="text-7xl font-bebas font-bold m-10">my repository</h1>
-      <div className="flex flex-col gap-10">
-        <h1 className="text-5xl font-bebas font-bold text-center">rfid system diagram</h1>
-        <img src={rfidsystem} className="w-250"/>
-        <h1 className="text-5xl font-bebas font-bold text-center">hardware diagram</h1>
-        <img src={rfiddiagram} className="w-250 border"/>
-        <h1 className="text-5xl font-bebas font-bold text-center">hardware</h1>
-        <div className="flex flex-wrap">
-          <img src={hardware1} className="w-125 h-125 border"/>
-          <img src={hardware2} className="w-125 h-125 border"/>
+      <h1 className="m-6 text-center font-bebas text-5xl font-bold sm:m-10 sm:text-7xl">my repository</h1>
+      <div className="flex w-full max-w-5xl flex-col gap-8 px-4 sm:gap-10">
+        <h1 className="text-center font-bebas text-4xl font-bold sm:text-5xl">rfid system diagram</h1>
+        <img src={rfidsystem} className="h-auto w-full max-w-[62.5rem]"/>
+        <h1 className="text-center font-bebas text-4xl font-bold sm:text-5xl">hardware diagram</h1>
+        <img src={rfiddiagram} className="h-auto w-full max-w-[62.5rem] border"/>
+        <h1 className="text-center font-bebas text-4xl font-bold sm:text-5xl">hardware</h1>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <img src={hardware1} className="h-auto w-full border"/>
+          <img src={hardware2} className="h-auto w-full border"/>
         </div>
-        <h1 className="text-5xl font-bebas font-bold text-center">menucal wpf c# application</h1>
-        <img src={menucal3} className="w-250 border"/>
-        <h1 className="text-5xl font-bebas font-bold text-center">menucal wpf c# application menu page</h1>
-        <img src={menucal1} className="w-250 border"/>
-        <h1 className="text-5xl font-bebas font-bold text-center">menucal wpf c# application material page</h1>
-        <img src={menucal2} className="w-250 border"/>
-        <a href={menucalurl} target="_blank" rel="noopener noreferrer" className="font-bebas font-bold text-5xl text-center underline">
+        <h1 className="text-center font-bebas text-4xl font-bold sm:text-5xl">menucal wpf c# application</h1>
+        <img src={menucal3} className="h-auto w-full max-w-[62.5rem] border"/>
+        <h1 className="text-center font-bebas text-4xl font-bold sm:text-5xl">menucal wpf c# application menu page</h1>
+        <img src={menucal1} className="h-auto w-full max-w-[62.5rem] border"/>
+        <h1 className="text-center font-bebas text-4xl font-bold sm:text-5xl">menucal wpf c# application material page</h1>
+        <img src={menucal2} className="h-auto w-full max-w-[62.5rem] border"/>
+        <a href={menucalurl} target="_blank" rel="noopener noreferrer" className="text-center font-bebas text-3xl font-bold underline sm:text-5xl">
           menucal link download click here window10/11 only
         </a>
       </div>
